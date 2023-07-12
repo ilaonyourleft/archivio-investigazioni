@@ -1,3 +1,4 @@
 /archivio-be/venv/
 /archivio-be/.idea/
 /archivio-be/archivio_be/db.sqlite3
+/archivio-fe/archivio-fe/node_modules/
