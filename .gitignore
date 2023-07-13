@@ -2,3 +2,5 @@
 /archivio-be/.idea/
 /archivio-be/archivio_be/db.sqlite3
 /archivio-fe/archivio-fe/node_modules/
+.DS_Store
+/archivio-be/.DS_Store
