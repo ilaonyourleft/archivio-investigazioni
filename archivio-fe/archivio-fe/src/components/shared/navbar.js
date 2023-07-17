@@ -5,7 +5,7 @@ class NavBarHome extends Component {
     render() {
         return (
             <div>
-                <Navbar color="light" light expand="md">
+                <Navbar color="light" light expand="md" style={{ marginTop: "20px" }}>
                     <NavbarBrand href="/">Homepage</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
