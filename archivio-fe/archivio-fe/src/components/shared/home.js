@@ -5,10 +5,12 @@ import UtenteList from "../utente/utentelist";
 import axios from "axios";
 
 import { API_URL } from "../constants/index";
+import DropdownSelect from "./dropdown";
 
 class Home extends Component {
     state = {
-        students: []
+        utenti: [],
+        ruoli: []
     };
 
     componentDidMount() {
@@ -19,14 +21,25 @@ class Home extends Component {
         axios.get(API_URL + 'utenti/').then(res => this.setState({ utenti: res.data }));
     };
 
+    getRuoli = () => {
+        axios.get(API_URL + 'ruoli/').then(res => this.setState({ ruoli: res.data }));
+    };
+
     resetState = () => {
         this.getUtenti();
+        this.getRuoli();
     };
 
     render() {
         return (
             <Container style={{ marginTop: "20px" }}>
-                <h5 className="text-center">Auror in servizio</h5>
+                <Row>
+                    <Col>
+                        <DropdownSelect 
+                            items={this.state.ruoli}
+                        />
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <UtenteList

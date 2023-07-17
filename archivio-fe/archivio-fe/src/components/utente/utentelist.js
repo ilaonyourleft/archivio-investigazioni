@@ -5,7 +5,7 @@ class UtenteList extends Component {
     render() {
         const utenti = this.props.utenti;
         return (
-            <Table dark hover responsive>
+            <Table dark hover responsive style={{ marginTop: "20px" }}>
                 <thead>
                     <tr>
                         <th>Nome</th>
