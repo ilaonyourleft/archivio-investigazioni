@@ -26,7 +26,7 @@ class Home extends Component {
     render() {
         return (
             <Container style={{ marginTop: "20px" }}>
-                <h5>Auror in servizio</h5>
+                <h5 className="text-center">Auror in servizio</h5>
                 <Row>
                     <Col>
                         <UtenteList
