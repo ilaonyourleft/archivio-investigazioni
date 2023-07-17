@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from utente.views import utenti_list, utenti_detail
+from ruolo.views import ruoli_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^api/utenti/$', utenti_list),
     re_path(r'^api/utenti/([0-9])$', utenti_detail),
+    re_path(r'^api/ruoli/$', ruoli_list),
 ]
