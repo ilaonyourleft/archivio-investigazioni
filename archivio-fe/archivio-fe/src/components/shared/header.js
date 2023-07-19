@@ -9,7 +9,6 @@ class Header extends Component {
           alt="logo"
           width="300"
         />
-        <h3>Dipartimento</h3>
       </div>
     );
   }
